@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use Jantinnerezo\LivewireAlert\Facades\LivewireAlert;
+use PDF;
 
 class DashboardL extends Component
 {
@@ -14,9 +15,13 @@ class DashboardL extends Component
 
 
     public function toast() {
-        LivewireAlert::title('Save?')
-        ->withConfirmButton('Yes, Save')
-        ->withCancelButton('Cancel')
-        ->show();
+
+        // $pdf = PDF::loadView('laporan.laporan');
+        // return $pdf->stream("coba.pdf");
+        
+        // LivewireAlert::title('Save?')
+        // ->withConfirmButton('Yes, Save')
+        // ->withCancelButton('Cancel')
+        // ->show();
     }
 }
